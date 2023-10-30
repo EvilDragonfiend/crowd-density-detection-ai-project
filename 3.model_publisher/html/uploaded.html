@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uploaded Image</title>
+</head>
+<body>
+    <h1>Uploaded Image: {{filename}}</h1>
+<table>
+<tbody>
+<tr>
+<td>    <font size=10>탐지된 사람: {{detected}}</font></br>
+    <font size=10>위험도 예측도: {{myresult}}</font></td>
+<td><img src="{{ url_for('static', filename=filename) }}" width="1000" alt="Test"></br></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
